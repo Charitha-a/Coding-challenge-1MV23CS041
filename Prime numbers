@@ -1,0 +1,22 @@
+Write a program that takes an integer `n` as input and prints all the prime numbers less than or
+equal to `n`.
+
+#include<stdio.h>
+int main()
+{
+      int i j,n;
+      printf("Enter the nth value : ");
+      scanf("%d",&n);
+      printf ("The numbers are: ");
+      for(i=1;i<=n;i++)
+      {
+             for(j=2;j<i;j++)
+             {
+                     if(i%j==0)
+                           break;
+             }
+      }
+      if(i==j)
+             printf("%d",i);
+     return 0;
+}
